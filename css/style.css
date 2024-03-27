@@ -1,0 +1,418 @@
+/* Beginning of Reset CSS by Eric Meyer.*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/*
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*/
+/* End of Reset CSS. */
+
+:root {
+	--serif-font: "EB Garamond", Garamond, serif;
+	--mono-font: "Monospace", monospace;
+	--bg: #212426;
+	--accent-bg: #17171A;
+	--text: #CCEEFF;
+	--border: #667780;
+	--accent: #00AAFF;
+	--accent-hover: #00FFFF;
+	--accent-visited: #006AFF;
+ }
+@font-face {
+ 	font-family: "EB Garamond";
+ 	src: url("/css/EBGaramond-Regular-Variable.ttf");
+	font-style: normal;
+}
+@font-face {
+	font-family: "EB Garamond";
+	src: url("/css/EBGaramond-Italic-Variable.ttf");
+	font-style: italic;	
+}
+html { 
+	font-family: "EB Garamond", Garamond, serif;
+	margin: 0 auto;
+	max-width: 40rem;
+	font-size: 110%;
+	background: #000000;
+	color: var(--text);
+	scroll-behavior: smooth;
+}
+body {
+	font-size: 1rem;
+	line-height: 1;
+}
+
+@media (min-width: 20rem){
+	body{
+		font-size:calc(1rem + 0.00625 * (100vw - 20rem));
+	}
+}
+@media (min-width: 40rem){
+  	body{
+		font-size:1.125rem;
+	}
+}
+
+header {
+	margin: 0;
+	padding: 0.25rem 0 1rem 0;
+	border-bottom: 1px solid var(--accent);
+	border-left: 1px solid var(--accent);
+	border-right: 1px solid var(--accent);	
+	background: var(--accent-bg);
+	color: var(--accent);
+	text-align: left;
+}
+header h1 {
+	margin: 0 1rem 0.5rem 1rem;
+  padding: 0;
+	font-size: 1.5rem;
+	font-weight: 550;
+  font-variant: small-caps;
+  border: none;
+}
+header h1 a {
+  transition: 0.35s ease-out;
+}
+header h1 a:visited {
+	color: var(--accent);
+}
+header h1 a:active {
+	color: var(--accent-hover);
+}
+header h1 a:hover {
+	color: var(--accent-hover);
+}
+header p {
+	margin: -0.25rem 0 -0.35rem 1rem;
+  padding: 0;
+	font-size: 1.2rem;
+  font-weight: 550;
+  font-variant: small-caps;
+  color: var(--text);
+  line-height: 1;
+}
+.dropdown {
+  margin: 0.5rem -0.3rem 0 0;
+  display: inline-block;
+  position: relative;
+  font-size: 1.2rem;
+	font-weight: 550;
+}
+.dropbtn {
+  margin: 0;
+  padding: 0.78rem 0.75rem 0.15rem 0.75rem;
+	border-bottom: 1px solid var(--accent);
+	border-left: 1px solid var(--accent);
+	border-right: 1px solid var(--accent);	
+	background: var(--accent-bg);
+	color: var(--text);
+  cursor: pointer;
+  transition: 0.35s ease-out;
+}
+.dropdown .dropdown-content {
+  white-space: nowrap;
+  position: absolute;
+  top: 55%;
+  border: 1px solid var(--accent);
+  background-color: var(--accent-bg);
+  min-width: 120%;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.35s ease-out;
+}
+.dropdown-content a {
+  padding: 0.85rem 1rem 0.85rem 1rem;
+  display: block;
+  transition: 0.35s ease-out;
+}
+.dropdown-content a:hover {
+  color: var(--accent-bg);
+  background-color: var(--accent);
+}
+.dropdown:focus .dropdown-content {
+  transform: translateY(20px);
+  visibility: visible;
+  opacity: 1;
+}
+.dropbtn:hover, .dropdown:focus .dropbtn {
+  color: var(--accent-bg);
+  background-color: var(--accent);
+}
+.dropdown .db2 {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0; opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+}
+.dropdown:focus .db2 {
+  display: inline-block;
+}
+.dropdown .db2:focus .dropdown-content {
+  outline: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+main {
+	font: inherit;
+}
+article {
+}
+section {
+	margin: 2rem 0.05rem;
+	padding: 0.5rem 1rem;
+	outline: 1px solid var(--border);
+	background: var(--bg);
+	overflow-x: auto;
+	scroll-behavior: smooth;
+}
+
+
+p {
+	margin: 0.75rem 0 1rem 0;
+	line-height: 1.35;
+}
+.strophe {
+	white-space: nowrap;
+}
+sup { 
+	vertical-align: top; 
+ 	font-size: 0.8rem;
+	position: relative;
+	top: -0.2rem;
+}
+blockquote {
+	margin: 1rem 0;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+	padding: 0 0.5rem 0 1rem;
+	border-inline-start: 1px solid var(--accent);
+	line-height: 1.25;
+}
+
+ul, ol {
+	margin: 0 0 0 2.15rem;
+	line-height: 1.35;
+}
+ul {
+	list-style: square;
+}
+li {
+	margin: 1rem 0 1rem 0;
+}
+ul + h2 {
+	margin: 2rem 0 0 0;
+}
+
+h1, h2, h3 {
+	font: inherit;
+}
+h1 {
+	margin: 0.25rem 0 0 0;
+  padding: 0 0 0 0;
+	font-size: 2rem;
+ 	font-weight: 550;
+	font-variant: small-caps;
+    border-bottom: 1px solid var(--text);
+}
+h1 a:visited {
+	color: var(--accent-visited);
+}
+h1 a:active {
+	color: var(--accent-hover);
+}
+h1 a:hover {
+	color: var(--accent-hover);
+	text-decoration: none;
+}
+h1 + table {
+	margin: 1rem 0 0 0;
+}
+h2 {
+	margin: 0 0 0 0;
+	font-size: 1.5rem;
+	font-weight: 550;
+}
+h2 a:visited {
+	color: var(--accent-visited);
+}
+h2 a:active {
+	color: var(--accent-hover);
+}
+h2 a:hover {
+	color: var(--accent-hover);
+	text-decoration: none;
+}
+h3 {
+	margin: 1rem 0 0;
+	font-size: 1.1rem;
+	font-weight: 550;
+}
+h1 + h2 {
+  margin: 1.5rem 0 0 0;
+}
+p + h1, p + h2, p + h3 {
+	margin: 2rem 0 0 0;
+}
+
+details {
+  margin: -0.25rem 0 0.25rem 0;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+summary {
+  margin: 0 -0.5rem 0 -0.95rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  font-variant: small-caps;
+    cursor: pointer;
+}
+details[open] {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+details[open] summary {
+text-decoration: none;
+}
+details > ul {
+  margin: -0.5rem 0 -0.5rem 0.65rem;
+  list-style-type: none;
+}
+/*
+details[open] {
+	margin: 0 0 0 -0.85rem;
+  padding: 0 0 0.5rem 0;
+
+}
+details[open] summary{
+  padding: 0;
+}
+details[open] > *:last-child{
+	margin-bottom: 0;
+}
+*/
+
+a:link {
+	color: var(--accent);
+	text-decoration: none;
+  transition: 0.35s ease-out;
+}
+a:visited {
+	color: var(--accent-visited);
+}
+a:active {
+	color: var(--accent-hover);
+}
+a:hover {
+	color: var(--accent-hover);
+	text-decoration: none;
+  transition: 0.35s ease-out;
+}
+
+
+code {
+	padding: 0 0.1rem 0.1rem 0.1rem;
+	font-family: var(--mono-font);
+	color: var(--text);
+	background: var(--accent-bg);
+}
+pre {
+	padding: 0.1rem 0.1rem 0.3rem 0.1rem;
+	background: var(--accent-bg);
+	max-width: 100%;
+	overflow-x: auto;
+}
+
+
+button {
+	outline: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: calc(.25rem - 1px) 0.5rem;
+	font-family: inherit;
+	font-size: inherit;
+	border: 0px;
+	background: var(--accent);
+	color: var(--bg);
+	display: inline-block;
+	width: auto;
+	cursor: pointer;
+}
+.fade {
+  background-color: var(--accent);
+  transition: background-color 0.35s;
+}
+.fade:hover {
+  background-color: var(--accent-hover);
+}
+
+hr {
+  margin: 0.75rem 0 2rem 0;
+	height: 1px;
+  width: 10rem;
+  background-color: var(--border);
+	border: none;
+
+}
+
+
+body footer {
+	margin: 0;
+	padding: 1rem 1.5rem 1.5rem;
+	border-top: 1px solid var(--accent);
+	border-left: 1px solid var(--accent);
+	border-right: 1px solid var(--accent);	
+	background: var(--bg);
+	color: var(--text);
+	text-align: center;
+	line-height: 1.25;
+}
+
+
+::selection {
+	background: rgba(0, 170, 255, 0.30);
+}
