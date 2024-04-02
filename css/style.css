@@ -258,7 +258,7 @@ h1 {
 	font-size: 2rem;
  	font-weight: 550;
 	font-variant: small-caps;
-    border-bottom: 1px solid var(--text);
+    border-bottom: 1px solid var(--border);
 }
 h1 a:visited {
 	color: var(--accent-visited);
@@ -277,6 +277,7 @@ h2 {
 	margin: 0 0 0 0;
 	font-size: 1.5rem;
 	font-weight: 550;
+	font-variant: small-caps;
 }
 h2 a:visited {
 	color: var(--accent-visited);
@@ -396,15 +397,9 @@ hr {
   width: 10rem;
   background-color: var(--border);
 	border: none;
-}
-.footer
-{
-  margin: 0.5rem auto 0.25rem auto;
-	height: 1px;
 
-  background-color: var(--border);
-	border: none;
 }
+
 
 body footer {
 	margin: 0;
