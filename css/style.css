@@ -392,12 +392,10 @@ button {
 }
 
 hr {
-  margin: 0.75rem 0 2rem 0;
+	margin: 1rem 8rem 2rem 0;
 	height: 1px;
-  width: 10rem;
-  background-color: var(--border);
+	background-color: var(--border);
 	border: none;
-
 }
 
 
