@@ -234,6 +234,9 @@ blockquote {
 	border-inline-start: 1px solid var(--accent);
 	line-height: 1.25;
 }
+blockquote + h2 {
+	margin: 2rem 0 0 0;
+}
 
 ul, ol {
 	margin: 0 0 0 2.15rem;
