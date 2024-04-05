@@ -234,9 +234,6 @@ blockquote {
 	border-inline-start: 1px solid var(--accent);
 	line-height: 1.25;
 }
-blockquote + h2 {
-	margin: 2rem 0 0 0;
-}
 
 ul, ol {
 	margin: 0 0 0 2.15rem;
@@ -261,7 +258,15 @@ h1 {
 	font-size: 2rem;
  	font-weight: 550;
 	font-variant: small-caps;
-    border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.h1poemas {
+	margin: 0.25rem 0 0 0;
+  padding: 0 0 0 0;
+	font-size: 2rem;
+ 	font-weight: 550;
+	font-variant: small-caps;
+  border-bottom: 1px solid var(--bg);
 }
 h1 a:visited {
 	color: var(--accent-visited);
@@ -282,6 +287,14 @@ h2 {
 	font-weight: 550;
 	font-variant: small-caps;
 }
+.h2poemas
+{
+	margin: 0 0 0 0;
+	font-size: 1.5rem;
+	font-weight: 550;
+  font-variant: normal;
+}
+
 h2 a:visited {
 	color: var(--accent-visited);
 }
@@ -297,10 +310,10 @@ h3 {
 	font-size: 1.1rem;
 	font-weight: 550;
 }
-h1 + h2 {
+h1 + h2, h1 + h2.h2poemas {
   margin: 1.5rem 0 0 0;
 }
-p + h1, p + h2, p + h3 {
+p + h1, p + h2, p + h2.h2poemas, p + h3 {
 	margin: 2rem 0 0 0;
 }
 
@@ -395,9 +408,9 @@ button {
 }
 
 hr {
-	margin: 1rem 8rem 2rem 0;
+  margin: 1rem 8rem 2rem 0;
 	height: 1px;
-	background-color: var(--border);
+  background-color: var(--border);
 	border: none;
 }
 
