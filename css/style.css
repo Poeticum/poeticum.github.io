@@ -96,9 +96,9 @@ body {
 header {
 	margin: 0;
 	padding: 0.25rem 0 1rem 0;
-	border-bottom: 1px solid var(--accent);
-	border-left: 1px solid var(--accent);
-	border-right: 1px solid var(--accent);	
+	border-bottom: 2px solid var(--accent);
+	border-left: 8px solid var(--accent);
+	border-right: 2px solid var(--accent);	
 	background: var(--accent-bg);
 	color: var(--accent);
 	text-align: left;
@@ -129,7 +129,6 @@ header p {
 	font-size: 1.2rem;
   font-weight: 550;
   font-variant: small-caps;
-  color: var(--text);
   line-height: 1;
 }
 .dropdown {
@@ -142,9 +141,9 @@ header p {
 .dropbtn {
   margin: 0;
   padding: 0.78rem 0.75rem 0.15rem 0.75rem;
-	border-bottom: 1px solid var(--accent);
-	border-left: 1px solid var(--accent);
-	border-right: 1px solid var(--accent);	
+	border-bottom: 2px solid var(--accent);
+	border-left: 8px solid var(--accent);
+	border-right: 2px solid var(--accent);	
 	background: var(--accent-bg);
 	color: var(--text);
   cursor: pointer;
@@ -153,8 +152,11 @@ header p {
 .dropdown .dropdown-content {
   white-space: nowrap;
   position: absolute;
-  top: 55%;
-  border: 1px solid var(--accent);
+  top: 62.5%;
+  border-top: 2px solid var(--accent);
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  border-left: 8px solid var(--accent);
   background-color: var(--accent-bg);
   min-width: 120%;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -211,7 +213,14 @@ section {
 	overflow-x: auto;
 	scroll-behavior: smooth;
 }
-
+.tabla-seccion {
+	margin: 2rem 0.05rem;
+	padding: 0.5rem 1rem;
+	outline: 1px solid var(--text);
+	background: var(--bg);
+	overflow-x: auto;
+	scroll-behavior: smooth;
+}
 
 p {
 	margin: 0.75rem 0 1rem 0;
@@ -220,6 +229,7 @@ p {
 .strophe {
 	white-space: nowrap;
 }
+
 sup { 
 	vertical-align: top; 
  	font-size: 0.8rem;
@@ -242,11 +252,18 @@ ul, ol {
 ul {
 	list-style: square;
 }
+.sublista
+{
+	list-style: none;
+}
+ul :target{
+  background: rgba(0, 170, 255, 0.15);
+}
 li {
 	margin: 1rem 0 1rem 0;
 }
-ul + h2 {
-	margin: 2rem 0 0 0;
+ul.sublista + li {
+	margin: 1.25rem 0 1rem 0;
 }
 
 h1, h2, h3 {
@@ -258,15 +275,10 @@ h1 {
 	font-size: 2rem;
  	font-weight: 550;
 	font-variant: small-caps;
-  border-bottom: 1px solid var(--border);
 }
-.h1poemas {
-	margin: 0.25rem 0 0 0;
-  padding: 0 0 0 0;
-	font-size: 2rem;
- 	font-weight: 550;
-	font-variant: small-caps;
-  border-bottom: 1px solid var(--bg);
+.tabla-titulo {
+  font-size: 2rem;
+  border-bottom: 1px solid var(--text);
 }
 h1 a:visited {
 	color: var(--accent-visited);
@@ -283,18 +295,9 @@ h1 + table {
 }
 h2 {
 	margin: 0 0 0 0;
-	font-size: 1.5rem;
+	font-size: 1.45rem;
 	font-weight: 550;
-	font-variant: small-caps;
 }
-.h2poemas
-{
-	margin: 0 0 0 0;
-	font-size: 1.5rem;
-	font-weight: 550;
-  font-variant: normal;
-}
-
 h2 a:visited {
 	color: var(--accent-visited);
 }
@@ -310,10 +313,10 @@ h3 {
 	font-size: 1.1rem;
 	font-weight: 550;
 }
-h1 + h2, h1 + h2.h2poemas {
-  margin: 1.5rem 0 0 0;
+h1 + h2 {
+  margin: 1.15rem 0 0 0;
 }
-p + h1, p + h2, p + h2.h2poemas, p + h3, blockquote + h2 {
+p + h1, p + h2, p + h3, blockquote + h1, blockquote + h2 {
 	margin: 2rem 0 0 0;
 }
 
@@ -325,12 +328,12 @@ details {
 summary {
   margin: 0 -0.5rem 0 -0.95rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  font-weight: 500;
   font-variant: small-caps;
-    cursor: pointer;
+  cursor: pointer;
 }
 details[open] {
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  border-bottom: 1px solid var(--border);
+  padding: 0.5rem 0.5rem 0.25rem 0.5rem;
 }
 details[open] summary {
 text-decoration: none;
@@ -370,7 +373,6 @@ a:hover {
   transition: 0.35s ease-out;
 }
 
-
 code {
 	padding: 0 0.1rem 0.1rem 0.1rem;
 	font-family: var(--mono-font);
@@ -407,8 +409,9 @@ button {
   background-color: var(--accent-hover);
 }
 
+
 hr {
-  margin: 1rem 8rem 2rem 0;
+  margin: 1.25rem 0 0 0;
 	height: 1px;
   background-color: var(--border);
 	border: none;
@@ -417,16 +420,20 @@ hr {
 
 body footer {
 	margin: 0;
-	padding: 1rem 1.5rem 1.5rem;
-	border-top: 1px solid var(--accent);
-	border-left: 1px solid var(--accent);
-	border-right: 1px solid var(--accent);	
+	padding: 0.35rem 1.5rem 1rem 1.5rem;
+	border-top: 2px solid var(--accent);
+	border-left: 2px solid var(--accent);
+	border-right: 2px solid var(--accent);	
 	background: var(--bg);
 	color: var(--text);
 	text-align: center;
 	line-height: 1.25;
 }
-
+footer p {
+  margin: 0;
+  font-size: 2rem;
+  font-variant: small-caps;
+}
 
 ::selection {
 	background: rgba(0, 170, 255, 0.30);
