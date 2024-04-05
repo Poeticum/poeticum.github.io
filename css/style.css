@@ -313,7 +313,7 @@ h3 {
 h1 + h2, h1 + h2.h2poemas {
   margin: 1.5rem 0 0 0;
 }
-p + h1, p + h2, p + h2.h2poemas, p + h3 {
+p + h1, p + h2, p + h2.h2poemas, p + h3, blockquote + h2 {
 	margin: 2rem 0 0 0;
 }
 
