@@ -216,6 +216,7 @@ section {
 .tabla-seccion {
 	margin: 2rem 0.05rem;
 	padding: 0.5rem 1rem;
+	border-left: 7px solid var(--text);
 	outline: 1px solid var(--text);
 	background: var(--bg);
 	overflow-x: auto;
