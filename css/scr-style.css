@@ -98,7 +98,7 @@ header {
 	padding: 0.25rem 0 1rem 0;
 	border-bottom: 2px solid var(--accent);
 	border-left: 8px solid var(--accent);
-	border-right: 2px solid var(--accent);	
+	border-right: 2px solid var(--accent);
 	background: var(--accent-bg);
 	color: var(--accent);
 	text-align: left;
@@ -112,7 +112,8 @@ header h1 {
   border: none;
 }
 header h1 a {
-  transition: 0.35s ease-out;
+  transition: 0.35s;
+  text-decoration: none;
 }
 header h1 a:visited {
 	color: var(--accent);
@@ -122,6 +123,7 @@ header h1 a:active {
 }
 header h1 a:hover {
 	color: var(--accent-hover);
+  text-decoration: underline;
 }
 header p {
 	margin: -0.25rem 0 -0.35rem 1rem;
@@ -168,11 +170,13 @@ header p {
 .dropdown-content a {
   padding: 0.85rem 1rem 0.85rem 1rem;
   display: block;
+  text-decoration: none;
   transition: 0.35s ease-out;
 }
 .dropdown-content a:hover {
   color: var(--accent-bg);
   background-color: var(--accent);
+  text-decoration: none;
 }
 .dropdown:focus .dropdown-content {
   transform: translateY(20px);
@@ -216,7 +220,7 @@ section {
 .tabla-seccion {
 	margin: 2rem 0.05rem;
 	padding: 0.5rem 1rem;
-	border-left: 7px solid var(--text);
+  border-left: 7px solid var(--text);
 	outline: 1px solid var(--text);
 	background: var(--bg);
 	overflow-x: auto;
@@ -237,24 +241,34 @@ sup {
 	position: relative;
 	top: -0.2rem;
 }
+sup a { 
+text-decoration: none;
+}
+sup a:hover { 
+text-decoration: none;
+}
 blockquote {
 	margin: 1rem 0;
 	margin-inline-start: 0;
 	margin-inline-end: 0;
 	padding: 0 0.5rem 0 1rem;
 	border-inline-start: 1px solid var(--accent);
-	line-height: 1.25;
+	line-height: 1.35;
 }
 
 ul, ol {
-	margin: 0 0 0 2.15rem;
+	margin: 0.75rem 0 1rem 1rem;
 	line-height: 1.35;
 }
 ul {
 	list-style: square;
 }
-.sublista
-{
+.tabla-lista {
+  margin-left: 0;
+	list-style: none;
+}
+.sublista {
+  margin-left: 1.5rem;
 	list-style: none;
 }
 ul :target{
@@ -263,7 +277,7 @@ ul :target{
 li {
 	margin: 1rem 0 1rem 0;
 }
-ul.sublista + li {
+ul + li {
 	margin: 1.25rem 0 1rem 0;
 }
 
@@ -276,10 +290,6 @@ h1 {
 	font-size: 2rem;
  	font-weight: 550;
 	font-variant: small-caps;
-}
-.tabla-titulo {
-  font-size: 2rem;
-  border-bottom: 1px solid var(--text);
 }
 h1 a:visited {
 	color: var(--accent-visited);
@@ -321,37 +331,27 @@ p + h1, p + h2, p + h3, blockquote + h1, blockquote + h2 {
 	margin: 2rem 0 0 0;
 }
 
-details {
-  margin: -0.25rem 0 0.25rem 0;
-  padding: 0.5rem 0.5rem 0 0.5rem;
-}
-
-summary {
-  margin: 0 -0.5rem 0 -0.95rem;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  font-weight: 500;
-  font-variant: small-caps;
+details summary {
+	margin: 0.75rem 0 1rem 0.1rem;
+	line-height: 1.35;
+  font-weight: 550;
   cursor: pointer;
 }
-details[open] {
-  padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+.summary-estilo {
+  transition: 0.35s;
 }
-details[open] summary {
-text-decoration: none;
+.summary-estilo:hover {
+ color: var(--accent);
+ transition: 0.35s;
 }
-details > ul {
-  margin: -0.5rem 0 -0.5rem 0.65rem;
-  list-style-type: none;
+.summary-estilo:active {
+  color: var(--accent-hover);
+  transition: 0.35s;
+}
+p + details {
+  margin: -1rem 0 0 0;
 }
 /*
-details[open] {
-	margin: 0 0 0 -0.85rem;
-  padding: 0 0 0.5rem 0;
-
-}
-details[open] summary{
-  padding: 0;
-}
 details[open] > *:last-child{
 	margin-bottom: 0;
 }
@@ -359,19 +359,20 @@ details[open] > *:last-child{
 
 a:link {
 	color: var(--accent);
-	text-decoration: none;
-  transition: 0.35s ease-out;
+  text-decoration: none;
+  transition: 0.35s;
 }
 a:visited {
 	color: var(--accent-visited);
+  transition: 0.35s;
 }
 a:active {
 	color: var(--accent-hover);
 }
 a:hover {
 	color: var(--accent-hover);
-	text-decoration: none;
-  transition: 0.35s ease-out;
+	text-decoration: underline;
+  transition: 0.35s;
 }
 
 code {
@@ -402,6 +403,7 @@ button {
 	width: auto;
 	cursor: pointer;
 }
+
 .fade {
   background-color: var(--accent);
   transition: background-color 0.35s;
@@ -414,6 +416,7 @@ button {
 hr {
   margin: 1.25rem 0 0 0;
 	height: 1px;
+  width: 10rem;
   background-color: var(--border);
 	border: none;
 }
