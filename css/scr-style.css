@@ -264,7 +264,7 @@ ul {
 	list-style: square;
 }
 .tabla-lista {
-  margin-left: 0;
+  	margin-left: 1.75rem;
 	list-style: none;
 }
 .sublista {
