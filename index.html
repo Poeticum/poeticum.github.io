@@ -6,6 +6,8 @@
 
 <head>   
 	<title>Scrīptōrum poēticōrum aliōrumque</title>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 </head>
 
 <body>
@@ -19,7 +21,15 @@ aliōrumque
 </p>   
 </header>
 
-<script src="nav.html"></script>
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
   
 <main>
 <article>
