@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="/css/scr-style.css">
+
+<head>   
+	<title>Scrīptōrum poēticōrum aliōrumque</title>
+</head>
+
+<body>
+
 <header>
 	<h1>
     <a href="/">scrīptōrum poēticōrum</a>
@@ -41,3 +53,5 @@ aliōrumque
 </div>
 
 
+</body>
+</html>
