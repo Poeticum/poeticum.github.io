@@ -215,7 +215,7 @@ header p {
   background-color: var(--accent-bg);
   visibility: hidden;
   opacity: 0;
-  top: 85%;
+  top: 80%;
   left: -3%;
   z-index: 1;
   transition: 0.35s ease-out;
@@ -229,7 +229,7 @@ header p {
   transition: 0.35s ease-out;
 }
 .si {
-  cursor: default;
+  cursor: pointer;
 }
 .si::after {
   content: "\2630";
