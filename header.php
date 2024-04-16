@@ -1,3 +1,11 @@
+<!doctype html>
+<html <?php language_attributes(); ?>>
+
+	<head>   
+	<title>Scrīptōrum poēticōrum aliōrumque</title>
+</head>
+
+	<body>
 <?php
 echo "<header>
 	<h1>
