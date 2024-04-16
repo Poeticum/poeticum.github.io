@@ -208,15 +208,15 @@ header p {
 .sub-dropdown-content {
   white-space: nowrap;
   position: absolute;
-  top: -0.55rem;
   border-top: 2px solid var(--accent);
   border-right: 2px solid var(--accent);
   border-bottom: 2px solid var(--accent);
-  border-left: 2px solid var(--accent);
+  border-left: 8px solid var(--accent);
   background-color: var(--accent-bg);
   visibility: hidden;
   opacity: 0;
-  left: 100%;
+  top: 85%;
+  left: -3%;
   z-index: 1;
   transition: 0.35s ease-out;
 }
@@ -232,7 +232,7 @@ header p {
   cursor: default;
 }
 .si::after {
-  content: "\25B8";
+  content: "\2630";
   margin-left: 5px;
   vertical-align: -1px;
   margin-right: 10px;
@@ -252,16 +252,9 @@ header p {
   right: 0;
   bottom: 0;
   left: 0;
-  background:
-  linear-gradient(
-  90deg,
-  rgba(240, 242, 244, 0) 0%,
-  rgba(223, 223, 223, 1) 50%,
-  rgba(240, 242, 244, 0) 100%
-  );
   opacity: 0;
   z-index: -1;
-  transition: 0.4s ease-out;
+  transition: 0.35s ease-out;
 }
 .sub-dropdown-content a:hover::before {
     opacity: 1;
