@@ -209,17 +209,17 @@ header p {
 .sub-dropdown-content {
   white-space: nowrap;
   position: absolute;
-  border-top: 2px solid var(--accent);
+  border-top: 8px solid var(--accent);
   border-right: 2px solid var(--accent);
   border-bottom: 2px solid var(--accent);
   border-left: 8px solid var(--accent);
   background-color: var(--accent-bg);
   visibility: hidden;
   opacity: 0;
-  top: 80%;
+  top: 282%;
   left: -3%;
   z-index: 1;
-  transition: 0.35s ease-out;
+  transition: 0.35s ease-in-out;
 }
 .sub-dropdown-content a {
   padding: 0.85rem 1rem 0.85rem 1rem;
