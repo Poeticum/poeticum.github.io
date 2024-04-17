@@ -93,14 +93,12 @@ body {
 	}
 }
 
-
 header {
 	margin: 0;
 	padding: 0.25rem 0 1rem 0;
 	border-bottom: 2px solid var(--accent);
 	border-left: 8px solid var(--accent);
 	border-right: 2px solid var(--accent);
-	background: var(--accent-bg);
 	color: var(--accent);
 	text-align: left;
 }
@@ -147,10 +145,9 @@ header p {
 	border-bottom: 2px solid var(--accent);
 	border-left: 8px solid var(--accent);
 	border-right: 2px solid var(--accent);	
-	background: var(--accent-bg);
 	color: var(--text);
   cursor: pointer;
-  transition: 0.35s ease-out;
+  transition: 0.35s ease-in-out;
 }
 .dropdown .dropdown-content {
   white-space: nowrap;
@@ -166,7 +163,7 @@ header p {
   z-index: 1;
   visibility: hidden;
   opacity: 0;
-  transition: 0.35s ease-out;
+  transition: 0.35s ease-in-out;
 }
 .dropdown-titulo {
   padding: 0.85rem 1rem 0.85rem 1rem;
@@ -180,7 +177,7 @@ header p {
   padding: 0.85rem 1rem 0.85rem 1rem;
   display: block;
   text-decoration: none;
-  transition: 0.35s ease-out;
+  transition: 0.35s ease-in-out;
 }
 .dropdown-content a:hover {
   color: var(--accent-bg);
@@ -235,7 +232,7 @@ header p {
   text-decoration: none;
   position: relative;
   white-space: nowrap;
-  transition: 0.35s ease-out;
+  transition: 0.35s ease-in-out;
 }
 .si {
   cursor: pointer;
@@ -263,12 +260,11 @@ header p {
   left: 0;
   opacity: 0;
   z-index: -1;
-  transition: 0.35s ease-out;
+  transition: 0.35s ease-in-out;
 }
 .sub-dropdown-content a:hover::before {
     opacity: 1;
 }
-
 
 main {
 	font: inherit;
@@ -323,14 +319,14 @@ blockquote {
 }
 
 ul, ol {
-	margin: 0.75rem 0 1rem 1rem;
+	margin: 0.75rem 0 1rem 1.5rem;
 	line-height: 1.35;
 }
 ul {
 	list-style: square;
 }
 .tabla-lista {
-  	margin-left: 1.75rem;
+	margin-left: 1.75rem;
 	list-style: none;
 }
 .sublista {
@@ -494,7 +490,6 @@ body footer {
 	border-top: 2px solid var(--accent);
 	border-left: 2px solid var(--accent);
 	border-right: 2px solid var(--accent);	
-	background: var(--bg);
 	color: var(--text);
 	text-align: center;
 	line-height: 1.25;
