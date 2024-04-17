@@ -168,6 +168,14 @@ header p {
   opacity: 0;
   transition: 0.35s ease-out;
 }
+.dropdown-titulo {
+  padding: 0.85rem 1rem 0.85rem 1rem;
+  display: block;
+  color: var(--text);
+  background-color: var(--accent-bg);
+  text-decoration: none;
+  font-variant: small-caps;
+}
 .dropdown-content a {
   padding: 0.85rem 1rem 0.85rem 1rem;
   display: block;
