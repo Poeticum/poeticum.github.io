@@ -93,6 +93,10 @@ body {
 	}
 }
 
+.js {
+	display:none;
+}
+
 header {
 	margin: 0;
 	padding: 0.25rem 0 1rem 0;
