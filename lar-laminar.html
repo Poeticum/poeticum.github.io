@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lar laminar | Poeticum</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="Poesía en prosa por Roberto Q. S.">
+<link rel="stylesheet" href="/css/rqs.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="icon" href="/icon.ico">
+<link rel="canonical" href="https://poeticum.github.io">
+<link rel="me" href="https://writing.exchange/@robertoqs">
+</head>
+
+<body class="animation-opacity">  
+  
+<script src='nav.js'></script> 
+
+<main>
+<article>
+  
+<section>
+ <h1>Lar laminar</h1>
+  <p>
+La hoja de esta espada iluminando sus análogos herbáceos. El brillo levemente borroso agitado por mis pasos cubiertos, mis hombros cubiertos de plata de luna y media. Magnos cognoscentes no habitan los <i>intermundia</i>, o no es relevante, pero nosotros sí: el divino monte está en nuestro hogar, es nuestro hogar, la hoguera fluye estelarmente.
+</p>
+<p>
+El suelo de este bosque de raíces acercándose ligeramente al cielo y a las impresiones astrales. Un humus que busca más allá de la misma atmósfera, de la misma que insufla multiciplidad desde afueras nebulosos. Se hinche, esta tierra respira, foliando por doquier.
+</p>
+<p>
+El vigor de esta monomuta nocturna texturizando biselénicamente un campo abierto cercano a contrastes arbóreos. Troncos limítrofes que preceden ir bajo doseles de sombra, bajo oscuridad momentáneamente caleidoscópica al volver a ver radiancias globulares en lo alto. Me adentro, siguiendo un brevísimo levantamiento foliar otrora imperceptible con genética oftálmica, rastreando veras bestias. Artemis tensa su arco nuevo, labrado de un regalo de Yax Imix Che, contra marcas feromonales en dañadores deseantes.
+</p>
+<p>
+La problemática de esta dopaminergia disyuntiva patologizando lo ético-virtuoso: no aceptamos depredadores sadistas. Precisión táctica en la neutralización de las coyunturas fisiológicas que se nutren del sufrimiento ajeno incluso a pesar de las nanomáquinas clínicas en ellas. No vinimos a una huerta fresca a tolerar trasgadas añejas. Hermes estrena un caduceo, labrado de un regalo de Akṣayavaṭa, dirigiendo ágiles engaños orquestados contra Ares y sus secuaces.
+</p>
+<p>
+La extensión dinámica fortaleciendo la intensión apta para labores profilácticas y curativas. Ética radical. Significo en una topología etimológica, y concomitantemente lo Real alimenta desde la raíz. Renaturalizar la cornucopia, corromper la corrupción. El humus se eleva también, mielinización ctónica ramificando con ello. Cernunnos crece proporcionalmente en sus proyecciones, fertilizadas por sustancias eleusinas, empujando oscuridades fabricadas por las Lamias.
+</p>
+<p>
+La lid vestigial de estos nos contrariando intentos de oprimir una cultura postpiramidal, de envenenar un cultivo rizomatoso, que los cultos ancestrales amables considerarían ultrantrópica, que habrían obsequiado a su prole. Musgo sobre piedra eléctrica, innumerables bifaces diminutas siendo testigos de encuentros novedosos. La espada brilla: un claro en el espesor, una apertura foliácea. Vino sobre plata. Un energúmeno menos. «No mancillaréis más el luminoso aroma del fruto de la fresaranja».
+</p>
+</section>
+
+</article>
+</main>
+
+
+<footer>
+<a href="https://github.com/RobertoQSx">Roberto Q. S.</a><br>
+Mi obra original está bajo la licencia internacional<br>
+	<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es">CC BY-NC-ND 4.0</a> o posterior.<br>
+<i>Cōgitō ergō quaerō</i>&nbsp;&middot;&nbsp;πάντα ῥεῖ&nbsp;&middot;&nbsp;γνῶθι σεαυτόν
+  </footer>
+
+<button class="topbutton" id="topbutton" onclick="topbuttonFunction()" >&uarr;</button>
+
+<!-- Fixed navigation, return to top button. --> 
+<script>
+window.onscroll = function() {
+navigationFunction();
+scrollFunction();
+}
+
+var header = document.getElementById("headernav");
+var sticky = header.offsetTop;
+
+var topbtn = document.getElementById("topbutton");
+
+function navigationFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("fixednav");
+  } else {
+    header.classList.remove("fixednav");
+  }
+}
+
+function scrollFunction() {
+  if (document.body.scrollTop> 300 || document.documentElement.scrollTop> 300) {
+    topbtn.style.display = "block";
+  } else {
+    topbtn.style.display = "none";
+  }
+}
+
+function topbuttonFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
+ 
+  
+<!-- Collapsible table of contents -->  
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("toc-button-active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>

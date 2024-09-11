@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cumbres planetarias | Poeticum</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="Poesía en prosa por Roberto Q. S.">
+<link rel="stylesheet" href="/css/rqs.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="icon" href="/icon.ico">
+<link rel="canonical" href="https://poeticum.github.io">
+<link rel="me" href="https://writing.exchange/@robertoqs">
+</head>
+
+<body class="animation-opacity">
+  
+<script src='nav.js'></script> 
+
+<main>
+<article>
+  
+<section>
+ <h1>Cumbres planetarias</h1>
+ <p>
+Con el tiempo, la atmósfera de Puissantia se volvió demasiado densa, saturada de algo. Las cilindríferas, naturalmente, no sabían qué era ese certero <i>je-ne-sais-quoi</i>, no como los neuríferos, en todo caso. No que necesitaran saberlo en tal modo. Las cilindríferas, entonces, se alargaron, se elevaron, pues necesitaron alcanzar alturas nuevas de su espíritu para continuar con su respirituar.
+</p>
+<p>
+Hace unos milenios, una tribu de neuríferos, los antropoides, había instalado domos Hace unos milenios, una tribu de neuríferos, los antropoides, había instalado domos atmogénicos aquí, como parte de las preparaciones anteriores a la gran lluvia del <i>Megametéōron</i>. Esto fue un evento antemicelial, además: fue hasta después del colapso transicional de la Red Schumann que la tribu fungoide perdió la posibilidad de comunicarse con los otros neuríferos, de manera que no hubo acceso lo suficientemente temprano a información sobre cuestiones fundamentales del plan doméstico, y entonces procedieron con su propia implementación pluvial, enviando sus protocápsulas a la superficie. 
+</p>
+<p>
+Actualmente continúan las especulaciones sobre si el mencionado colapso, que resultó no ser un colapso sino un fallo no muy prolongado (de ahí, en parte, que los arqueohistoriadores favorezcan el término «colapso transicional»), fue precisamente a causa de los excesos de los domos. La <i>prehistoria</i> antropoide, para usar una palabra <i>prehistórica</i>, muestra suficientes ejemplos de instancias similares.
+</p>
+<p>
+Las cilindríferas, entonces, se conectan allí arriba con los <i>sprites</i>, y sus copas ultraltas se funden con ello. Proceden más allá de la fotosíntesis, la cual coexiste con iones que se transforman en frutos acidísimos. Estos después descienden, siendo algunos consumidos por los antropoides (quienes, además, metabolizan saludablemente la atmósfera densa). En la conexión <i>sprituosa</i> también se confunden desde la distancia, en la percepción de los oftalmnéticos. Algunos de estos, en una época previa, con sus cilios vibrando sonoramente durante su navegación, empezaron a hacer peregrinajes hacia las copas ultraltas, donde iniciaron la práctica de realizar conjunciones plasmáticas. Experimentaron (y experimentan) intensas visiones, y ese fue el origen de los Misterios Iónicos.
+</p>
+<p>
+La simbiosis resultante eventuó metamorfosis nuevas. Las cilindríferas desarrollaron capacidades respirituorias en la troposfera, donde crecieron horizontalmente en densísimos segmentos radiados, y allí produjeron las grandes lianas que se disparan para enlazar las copas medias y transmitir sabias savias, en sinapsis que cruzan las simas entre cimas, los espacios entre arborescencias lenticulares. Un célebre pionero anónimo, al subir a la primera meseta arbórea en ser visitada por los habitantes del suelo, los llamó los «discos elíseos».
+</p>
+<p>
+Eventualmente, unos científicos errantes reportaron haber percibido neuronas en varias áreas de las lianas, sugiriendo fascinantemente el prospecto de un devenir simbiótico. Actualmente, muchos de las tribus visitan las copas medias, en busca de las regiones de liana donde crecen los plexos de los que emana un superávit voluptuoso. En el transcurso de esa actividad surgieron los grupos nómadas que recorren los discos elíseos, bandadas cuyos miembros son neuríferos de procedencias diferentes, renovados a intervalos por buscadores de balances diversos (incluyendo el de estar diagonalmente de pie sobre el tronco de un árbol), de metaproducción, de metacognición, y de complejidad perceptual.
+</p>
+</section>
+
+</article>
+</main>
+
+
+<footer>
+<a href="https://github.com/RobertoQSx">Roberto Q. S.</a><br>
+Mi obra original está bajo la licencia internacional<br>
+	<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es">CC BY-NC-ND 4.0</a> o posterior.<br>
+<i>Cōgitō ergō quaerō</i>&nbsp;&middot;&nbsp;πάντα ῥεῖ&nbsp;&middot;&nbsp;γνῶθι σεαυτόν
+  </footer>
+
+<button class="topbutton" id="topbutton" onclick="topbuttonFunction()" >&uarr;</button>
+
+<!-- Fixed navigation, return to top button. --> 
+<script>
+window.onscroll = function() {
+navigationFunction();
+scrollFunction();
+}
+
+var header = document.getElementById("headernav");
+var sticky = header.offsetTop;
+
+var topbtn = document.getElementById("topbutton");
+
+function navigationFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("fixednav");
+  } else {
+    header.classList.remove("fixednav");
+  }
+}
+
+function scrollFunction() {
+  if (document.body.scrollTop> 300 || document.documentElement.scrollTop> 300) {
+    topbtn.style.display = "block";
+  } else {
+    topbtn.style.display = "none";
+  }
+}
+
+function topbuttonFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
+ 
+  
+<!-- Collapsible table of contents -->  
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("toc-button-active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>

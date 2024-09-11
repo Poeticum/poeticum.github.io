@@ -2,11 +2,11 @@ const template = document.createElement('template');
 template.innerHTML = 
 `
 <header>
- <a href="/"><h1>Roberto Q. S.</h1></a>
+ <a href="/"><h1>Poeticum</h1></a>
 <p>
-Poesía&nbsp;en&nbsp;prosa&nbsp;filosófica,<br>ciencio-ficcional,<br>surrealista.
+Poesía&nbsp;en&nbsp;prosa&nbsp;por Roberto&nbsp;Q.&nbsp;S.
 </p>
-</header>  
+</header>
 
 <nav id="headernav"> 
 

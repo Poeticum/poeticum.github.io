@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Humores espirituosos misceláneos | Poeticum</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="Poesía en prosa por Roberto Q. S.">
+<link rel="stylesheet" href="/css/rqs.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="icon" href="/icon.ico">
+<link rel="canonical" href="https://poeticum.github.io">
+<link rel="me" href="https://writing.exchange/@robertoqs">
+</head>
+
+<body class="animation-opacity">
+  
+<script src='nav.js'></script>   
+
+<main>
+<article>
+  
+<section>
+	<h1>Humores espirituosos misceláneos</h1>
+	  <p>Este es un poemario variopinto que, al no ser ni filosófico ni ciencio-ficcional, decidí recopilar en su propia página.</p>
+  	<button class="toc-button collapsible">Tabla de contenidos</button>
+    <ul class="toc-ul">
+			<li><a href="#oraculo-recien-nacido"><i>Oráculo recién nacido</i></a></li>
+			<li><a href="#otrora-manifiesto-ocupacional"><i>Otrora manifiesto ocupacional</i></a></li>
+    				<ul class="toc-ul-sub">
+				<li>Addendum</li>
+				</ul>
+			<li><a href="#impresion-psicosferica-mnemonica"><i>Impresión psicosférica mnemónica</i></a></li>
+		</ul>
+</section>
+      
+<section id="oraculo-recien-nacido">
+<h2>Oráculo recién nacido</h2>
+<p>
+Caca de bebé.<br>
+Ver caca de bebé.<br>
+Lo proclamo como un dicho nuevo: «Es como ver caca de bebé». Es decir, es algo acerca de lo cual uno no tiene derecho a quejarse. Es también algo que uno naturalmente no solo va a ver sino a oler con acuidad, especialmente tratándose de las primeras excreciones. De allí surge un arte consistente en la lectura e interpretación de las heces en los pañales de los bebés, similarmente a con posos de café en el fondo de las tazas. Especialistas en tales cuestiones, entonces, buscan las preciadas e insustituibles cagadas de los primeros uno o dos días después del parto.<br>
+Un oráculo nace.<br>
+Caca de bebé.<br>
+</p>
+</section>
+ 
+<section id="otrora-manifiesto-ocupacional">
+<h2>Otrora manifiesto ocupacional</h2>
+<p>
+Me pagan por hablar.<br>
+Me pagar por articular. Por batir los labios.<br>
+Movimientos de mandíbula y batimiento de labios es por lo que me pagan.<br>
+Mandíbula abajo, mandíbula arriba.<br>
+Golpeteo de labio, golpeteo de labio.<br>
+Un idioma entra, otro idioma sale, y viceversa.<br>
+Entrada-salida.<br>
+Recibo medio de cambio a cambio de pronunciar con lengua y laringe.<br>
+Adquiero moneda usando un flujo de aire para producir sonidos.<br>
+<i>Input-output</i>.<br>
+Lenguaje entra, lenguaje sale, y viceversa.<br>
+Un código entra, otro código sale.<br>
+Me pagan por hablar.<br>
+Soy un hablador.<br>
+Soy El Intérprete.
+</p>
+<h3><i>Addendum</i></h3>
+<p>
+Quijada abajo, quijada arriba. A RQS le pagan por hablar.<br>
+Un mecanismo de cotorrear.<br>
+Código entra, código sale.<br>
+Abrir la boca. Bajar la mandíbula.<br>
+Hablad.<br>
+<i>Parole-langue-parole</i>.<br>
+Bisagras mandibulares.<br>
+Cilindro de aire.<br>
+Tales son las herramientas de 01010010-01010001-01010011.
+</p>
+</section>
+
+<section id="impresion-psicosferica-mnemonica">
+<h2>Impresión psicoesférica mnemónica</h2>
+<p>
+Musgo en rocas en medio del aroma a coníferas. El sonido de un río fluyendo cerca. Una montaña refrescante. El aire lo suficientemente frío para usar un abrigo; el cielo lo suficientemente despejado para tomar el sol matutino. La neblina arriba al caer la tarde, anunciando una retirada a la cabaña de tronco para café y ajedrez. La danza nocturna de las luciérnagas. Altitud tropical: una combinación magnánima de latitud y elevación. Nunca se vuelve caliente. Veo mi respiración cuando exhalo, excepto alrededor del mediodía. Nunca se vuelve demasiado frío, excepto cuando es tiempo de dormir.
+</p>
+</section>
+
+</article>
+</main>
+
+
+<footer>
+<a href="https://github.com/RobertoQSx">Roberto Q. S.</a><br>
+Mi obra original está bajo la licencia internacional<br>
+	<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es">CC BY-NC-ND 4.0</a> o posterior.<br>
+<i>Cōgitō ergō quaerō</i>&nbsp;&middot;&nbsp;πάντα ῥεῖ&nbsp;&middot;&nbsp;γνῶθι σεαυτόν
+  </footer>
+
+<button class="topbutton" id="topbutton" onclick="topbuttonFunction()" >&uarr;</button>
+
+<!-- Fixed navigation, return to top button. --> 
+<script>
+window.onscroll = function() {
+navigationFunction();
+scrollFunction();
+}
+
+var header = document.getElementById("headernav");
+var sticky = header.offsetTop;
+
+var topbtn = document.getElementById("topbutton");
+
+function navigationFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("fixednav");
+  } else {
+    header.classList.remove("fixednav");
+  }
+}
+
+function scrollFunction() {
+  if (document.body.scrollTop> 300 || document.documentElement.scrollTop> 300) {
+    topbtn.style.display = "block";
+  } else {
+    topbtn.style.display = "none";
+  }
+}
+
+function topbuttonFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
+ 
+  
+<!-- Collapsible table of contents -->  
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("toc-button-active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
