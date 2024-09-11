@@ -2,7 +2,7 @@ const template = document.createElement('template');
 template.innerHTML = 
 `
 <header>
- <a href="/"><h1>Poeticum</h1></a>
+ <a href="/"><h1>Poēticum</h1></a>
 <p>
 Poesía&nbsp;en&nbsp;prosa&nbsp;por Roberto&nbsp;Q.&nbsp;S.
 </p>
