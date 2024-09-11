@@ -1,0 +1,639 @@
+/* Beginning of Reset CSS by Eric Meyer.*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/*
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*/
+/* End of Reset CSS. */
+
+:root {
+	--serif-font: "EB Garamond", Garamond, serif;
+	--mono-font: "Monospace", monospace;
+	--background-dark: #131618;
+	--background-light: #212529;
+	--text: #F8F9FA;
+	--border: #495057;
+	--accent-light: #3395FF;
+	--accent-dark: #0062CC;
+	--visited: #7BA1B3;
+ }
+ 
+@font-face {
+ 	font-family: "EB Garamond";
+ 	src: url("/css/EBGaramond-Regular-Variable.ttf");
+	font-style: normal;
+}
+@font-face {
+	font-family: "EB Garamond";
+	src: url("/css/EBGaramond-Italic-Variable.ttf");
+	font-style: italic;	
+}
+@font-face {
+	font-family: "Cormorant Garamond";
+	src: url("/css/CormorantGaramond-SemiBold.ttf");
+	font-style: normal;	
+}
+@font-face {
+ 	font-family: "Playfair Display";
+ 	src: url("/css/PlayfairDisplay-Regular-Variable.ttf");
+	font-style: normal;
+}
+
+html { 
+	margin: 0 auto;
+	height: 100vh;
+  max-width: 40em;
+  font-size: 1em;
+  font-family: "EB Garamond", Garamond, serif;
+	background-color: #000;
+	color: var(--text);
+	scroll-behavior: smooth;
+  scroll-padding-top: 4em;
+}
+body {
+  height: 100%;
+	line-height: 1.5;
+}
+.animation-opacity {
+  animation: opac 0.5s
+  }
+  @keyframes opac { 
+    from { opacity: 0 } 
+    to { opacity :1 }
+}
+
+
+header {
+  padding: 1.5rem 0;
+  text-align: center;
+	background-color: var(--background-dark);
+}
+header h1 {
+  margin-top: 0;
+  margin-bottom: -0.75rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  border-bottom: none;
+  font-family: "Playfair Display";
+}
+header a:hover {
+  text-decoration: underline;
+}
+header a:visited {
+	color: var(--accent-light);
+}
+header p {
+  margin: 1rem 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Playfair Display";
+}
+nav {
+  height: 2.5rem;
+  width: 100%;
+  background-color: var(--background-dark);
+  border-top: none;
+  border-bottom: 4px solid var(--accent-dark);
+  z-index: 2;
+}
+.fixednav {
+  position: fixed;
+  top: 0;
+  max-width: 40rem;
+}
+.fixednav + main {
+  padding-top: 3rem;
+}
+nav button {
+  margin-right: -5px;
+  position: relative;
+  display: inline-block;
+  background-color: var(--background-dark);
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: 1px solid var(--accent-dark);
+  border-radius: 0;
+  font-size: 1.35rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  transition: 0.3s ease-in-out;
+}
+nav button.rt {
+    border-right: 1px solid var(--accent-dark);
+}
+nav button.home {
+  border-left: none;
+  max-height: 2.5rem;
+}
+nav button.home::before {
+  color: var(--accent-light);
+  font-family:"bootstrap-icons";
+  content: "\F62E";
+  position: relative;
+  vertical-align: top;
+  top: 3px;
+  right: 1px;
+  transition: 0.3s ease-in-out;
+}
+nav button.home:hover::before {
+  color: var(--text);
+}
+nav button.home.current {
+  background-color: var(--accent-dark);
+}
+nav button.home.current::before {
+  color: var(--text);
+}
+nav button.home.current:hover {
+  background-color: var(--accent-light);
+}
+nav button.home.current:active {
+  background-color: var(--accent-light);
+}
+nav button:hover {
+  color: var(--text);
+  background-color: var(--accent-dark);
+}
+nav button:active {
+  color: var(--text);
+  background-color: var(--accent-dark);
+  text-decoration:none;
+}
+nav button:focus {
+  color: var(--text);
+  background-color: var(--accent-dark);
+}
+nav button a:hover {
+  color: var(--text);
+	text-decoration:none;
+  transition: 0.3s ease-in-out;
+	}
+nav button a:active {
+  color: var(--text);
+  background-color: var(--accent-dark);
+	text-decoration:none;
+	}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style:none;
+  white-space: nowrap;
+  position: absolute;
+  top: 1.8rem;
+  background-color: var(--background-dark);
+  border: 1px solid var(--accent-dark);
+  font-variant: normal;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 2);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  max-height: 16rem;
+  overflow-y: scroll;
+  z-index: 1;
+}
+nav ul li {
+  margin: 0;
+  line-height: 1;
+}
+nav ul.left  {
+  left: 0;
+  text-align: left;
+}
+nav ul.right  {
+  right: 0;
+  text-align: right;
+}
+/*.dropdown-title {
+  padding: 0.85rem 1rem 0.85rem 1rem;
+  display: block;
+  color: var(--text);
+  text-decoration: none;
+}*/
+nav ul a {
+  padding: 0.85rem;
+  display: block;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+nav ul a:hover {
+  color: var(--text);
+  background-color: var(--accent-dark);
+  text-decoration: none;
+}
+nav ul a:active {
+  color: var(--text);
+  background-color: var(--accent-dark);
+  text-decoration: none;
+}
+nav ul a:visited {
+  color: var(--visited);
+}
+nav ul a:visited:hover {
+  color: var(--text);
+}
+nav button:focus ul {
+  transform: translateY(0.75rem);
+  visibility: visible;
+  opacity: 1;
+}
+nav button .navbtn {
+  position: absolute;
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0; 
+  opacity: 0;
+  cursor: pointer;
+  display: none;
+}
+nav button:focus .navbtn {
+  display: inline-block;
+}
+nav button .navbtn:focus ul {
+  outline: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/*.sub-dropdown {
+  position: relative;
+}
+.sub-dropdown-content {
+  white-space: nowrap;
+  position: absolute;
+  border-top: 8px solid var(--accent-light);
+  border-right: 2px solid var(--accent-light);
+  border-bottom: 2px solid var(--accent-light);
+  border-left: 8px solid var(--accent-light);
+  background-color: var(--accent-light-bg);
+  visibility: hidden;
+  opacity: 0;
+  top: 282%;
+  left: -3%;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+.sub-dropdown-content a {
+  padding: 0.85rem 1rem 0.85rem 1rem;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  white-space: nowrap;
+  transition: 0.3s ease-in-out;
+}
+.si {
+  cursor: pointer;
+}
+.si::after {
+  content: "\2630";
+  margin-left: 5px;
+  vertical-align: -1px;
+  margin-right: 10px;
+  float: right;
+}
+.sub-dropdown:hover .sub-dropdown-content {
+  color: var(--accent-light-bg);
+  background-color: var(--accent-light-bg);
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(10px);
+}
+.sub-dropdown-content a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+.sub-dropdown-content a:hover::before {
+    opacity: 1;
+}*/
+
+main {
+  padding: 0.1rem 1.25rem 6rem;
+  min-height: 100%;
+	font-family: inherit;
+  background-color: var(--background-light);
+}
+@media (min-width: 20rem){
+	main{
+		font-size:calc(1rem + 0.00625 * (100vw - 20rem));
+	}
+}
+@media (min-width: 40rem){
+  	main{
+		font-size:1.125rem;
+	}
+}
+article {
+	font-size: 120%;
+	color: var(--text);
+	background-color: var(--background-light);
+}
+section {
+  margin: 3rem 0 0;
+	color: var(--text);
+	background-color: var(--background-light);
+}
+section:first-child {
+  margin: 0;
+}
+
+p {
+	margin: 1.5rem 0 0;
+}
+
+sup { 
+  font-size: 0.8rem;
+  font-size: 1rem;
+  position: relative;
+  top: -0.3rem;
+  left: 0.05rem;
+}
+sup a { 
+text-decoration: none;
+}
+sup a::after {
+  font-family:"bootstrap-icons";
+  content:"\F22B";
+}
+sup a:hover {
+  color: var(--accent-dark);
+ text-decoration: none; 
+}
+sup a:visited:hover {
+  color: var(--accent-light);
+ text-decoration: none; 
+}
+
+blockquote {
+	margin: 1rem 0;
+	margin-inline-start: 0.1rem;
+	margin-inline-end: 0;
+	padding: 0 0.5rem 0 1rem;
+	border-inline-start: 1px solid var(--accent-dark);
+}
+
+ul, ol {
+	margin: 1.5rem 0 1.5rem 1.15rem;
+}
+ul:last-child, ol:last-child {
+	margin-bottom: 0;
+}
+ul {
+	list-style: square;
+}
+ul :target, ul:target, ol :target {
+  	background-color: rgba(51, 149, 255, 0.2);
+}
+li {
+	margin: 1.5rem 0 0;
+
+}
+ul.notes li a::after, ol.notes li a::after { 
+font-family:"bootstrap-icons";
+content:"\F237";
+font-size: 1.1rem;
+  position: relative;
+	vertical-align: middle; 
+top: -0.2rem;
+  padding-right: 0.2rem;
+}
+ul.notes li a:hover::after, ol.notes li a:hover::after { 
+color: var(--accent-dark);
+}
+ul.notes li a:visited:hover::after, ol.notes li a:visited:hover::after { 
+color: var(--accent-light);
+}
+
+ul.toc-ul {
+  margin: 0;
+  padding: 0 0 0 1.25rem;
+  border-left: 1px solid var(--border);
+  list-style: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  margin-inline-start: 0.05rem;
+}
+ul.toc-ul li a::after { 
+content: none;
+}
+ul.toc-ul-sub {
+  margin-bottom: 0;
+  padding: 0 0 0 1.25rem;
+  list-style: none;
+  border-left: 1px solid var(--border);
+  margin-inline-start: 0.5rem;
+}
+ul.toc-ul li {
+  line-height: 1;
+}
+ul.toc-ul li:first-child {
+  margin-top: 1.25rem;
+}
+ul.toc-ul li:last-child {
+  margin-bottom: 0.85rem;
+}
+ul.toc-ul-sub li:first-child {
+  margin-top: 0; 
+}
+
+h1, h2, h3 {
+  margin: 1.5rem 0 0;
+  font-family: "Cormorant Garamond";
+  font-variant: small-caps;
+  line-height: 1;
+}
+h1 {
+	font-size: 2.2rem;
+  border-bottom: 1px solid var(--border);
+}
+h2 {
+	font-size: 1.6rem;
+}
+h3 {
+	font-size: 1.2rem;
+}
+p + h2, p + h3, ul + h2, ul + h3 {
+	margin-top: 3rem;
+}
+
+
+a:link {
+	color: var(--accent-light);
+ 	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	color: var(--accent-light);
+	text-decoration: underline 2px;
+}
+a:visited {
+	color: var(--visited);
+}
+a[href^="http"]::after {
+  font-family:"bootstrap-icons";
+  content:"\F1C5" !important;
+font-size: 0.75rem;
+  position: relative;
+	vertical-align: middle; 
+top: -0.3rem;
+  left: 0.2rem;
+    padding-right: 0.2rem !important;
+}
+a[href^="http"]:hover::after {
+color: var(--accent-light) !important;
+}
+a[href^="http"]:visited:hover::after {
+color: var(--visited) !important;
+}
+
+button {
+  height: 2.5rem;
+	padding: 0 10px;
+	color: var(--text);
+	background-color: var(--accent-dark);
+  font-size: inherit;
+  font-family: inherit;
+	border: 1px solid #000;
+	border-radius: 8px;
+	cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+button:hover {
+	background-color: var(--accent-light);
+  transition: 0.3s ease-in-out;
+	}
+button a:hover {
+	color: var(--text);
+	text-decoration:none;
+	}
+button a:active {
+	color: var(--text);
+	background-color: var(--accent-light);
+	text-decoration:none;
+	}
+button a:visited {
+	color: var(--text);
+	}
+button.toc-button {
+  margin: 0.5rem 0 0.5rem;
+	cursor: pointer;
+  border-radius: 0;
+  transition: 0.3s ease-in-out;
+}
+button.toc-button:hover {
+  color: var(--text);
+	background-color: var(--background-light);
+  border-color: var(--border);
+  transition: 0.3s ease-in-out;
+	}
+button.toc-button::before {
+  margin-right: 0.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family:"bootstrap-icons";
+  content: "\F5E3";
+  position: relative;
+  float: left;
+  top: 0.35rem;
+  transition: rotate 0.3s ease-in-out;
+  rotate: 90deg;
+}
+button.toc-button-active::before {
+  margin-right: 0.25rem;
+  font-weight: 500;
+  position: relative;
+  float: left;
+  top: 0.35rem;
+  transition: rotate 0.3s ease-in-out;
+  rotate: 180deg;
+}
+
+button.topbutton {
+  height: 4rem;
+  padding: 0 12px 12px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 2;
+  animation: opac 0.3s;
+  @keyframes opac { f
+    from { opacity: 0 } 
+    to { opacity :1 }
+    } 
+  }
+
+hr {
+  margin: 0.25rem 0.75rem;
+	height: 1px;
+  background-color: var(--border);
+	border: none;
+}
+
+footer {
+  position: relative;  
+  bottom: 0;
+	padding: 1rem;
+	background-color: var(--background-dark);
+  border-top: 4px solid var(--accent-dark);
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+::selection {
+	background-color: rgba(51, 149, 255, 0.2);
+}
