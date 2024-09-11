@@ -23,7 +23,7 @@ Poesía&nbsp;en&nbsp;prosa&nbsp;por Roberto&nbsp;Q.&nbsp;S.
     <li><a href="el-micelio-del-amanecer.html"><i>El micelio del amanecer</i></a></li>
    <li><a href="gotas-igneas.html"><i>Gotas ígneas</i></a></li>
    <li><a href="la-caverna.html"><i>La caverna</i></a></li>
-   <li><a href="lar-laminar.html"><i>Lar liminar laminar</i></a></li>
+   <li><a href="lar-laminar.html"><i>Lar laminar</i></a></li>
      <hr>
         <li><a href="humores-espirituosos-miscelaneos.html"><i>Humores espirituosos<br>misceláneos</i></a></li>
    </ul>
