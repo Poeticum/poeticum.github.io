@@ -16,7 +16,7 @@ Poesía&nbsp;en&nbsp;prosa&nbsp;por Roberto&nbsp;Q.&nbsp;S.
   <i class="navbtn" tabindex="1"></i>
   Poemas
    <ul class="left">
-    <li><a href="locus-errans.html"><i>Locus errans</i></a></li>
+    <li><a href="locus-errans"><i>Locus errans</i></a></li>
     <li><a href="aedis-aestusque.html"><i>Aedis aestusque</i></a></li>
     <li><a href="cumbres-planetarias.html"><i>Cumbres planetarias</i></a></li>
     <li><a href="las-lianas-eternas.html"><i>Las lianas eternas</i></a></li>
