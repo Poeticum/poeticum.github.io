@@ -17,15 +17,15 @@ Poesía&nbsp;en&nbsp;prosa&nbsp;por Roberto&nbsp;Q.&nbsp;S.
   Poemas
    <ul class="left">
     <li><a href="locus-errans"><i>Locus errans</i></a></li>
-    <li><a href="aedis-aestusque.html"><i>Aedis aestusque</i></a></li>
-    <li><a href="cumbres-planetarias.html"><i>Cumbres planetarias</i></a></li>
-    <li><a href="las-lianas-eternas.html"><i>Las lianas eternas</i></a></li>
-    <li><a href="el-micelio-del-amanecer.html"><i>El micelio del amanecer</i></a></li>
-   <li><a href="gotas-igneas.html"><i>Gotas ígneas</i></a></li>
-   <li><a href="la-caverna.html"><i>La caverna</i></a></li>
-   <li><a href="lar-laminar.html"><i>Lar laminar</i></a></li>
+    <li><a href="aedis-aestusque"><i>Aedis aestusque</i></a></li>
+    <li><a href="cumbres-planetarias"><i>Cumbres planetarias</i></a></li>
+    <li><a href="las-lianas-eternas"><i>Las lianas eternas</i></a></li>
+    <li><a href="el-micelio-del-amanecer"><i>El micelio del amanecer</i></a></li>
+   <li><a href="gotas-igneas"><i>Gotas ígneas</i></a></li>
+   <li><a href="la-caverna"><i>La caverna</i></a></li>
+   <li><a href="lar-laminar"><i>Lar laminar</i></a></li>
      <hr>
-        <li><a href="humores-espirituosos-miscelaneos.html"><i>Humores espirituosos<br>misceláneos</i></a></li>
+        <li><a href="humores-espirituosos-miscelaneos"><i>Humores espirituosos<br>misceláneos</i></a></li>
    </ul>
 </button>
  
@@ -33,8 +33,8 @@ Poesía&nbsp;en&nbsp;prosa&nbsp;por Roberto&nbsp;Q.&nbsp;S.
   <i class="navbtn" tabindex="1"></i>
   Comentarios
    <ul class="right">
-        <li><a href="sobre-mi-poesia.html">Sobre mi poesía</a></li>
-        <li><a href="sobre-la-ciencia-ficcion.html">Sobre la ciencia ficción</a></li>
+        <li><a href="sobre-mi-poesia">Sobre mi poesía</a></li>
+        <li><a href="sobre-la-ciencia-ficcion">Sobre la ciencia ficción</a></li>
    </ul>
 </button>
  
