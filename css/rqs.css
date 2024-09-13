@@ -83,7 +83,7 @@ table {
 html { 
 	margin: 0 auto;
 	height: 100vh;
-  max-width: 40rem;
+  max-width: 50em;
   font-size: 1em;
   font-family: "EB Garamond", Garamond, serif;
 	background-color: #000;
@@ -369,7 +369,7 @@ main {
 		font-size:calc(1rem + 0.00625 * (100vw - 20rem));
 	}
 }
-@media (min-width: 40rem){
+@media (min-width: 50rem){
   	main{
 		font-size:1.125rem;
 	}
