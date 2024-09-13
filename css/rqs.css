@@ -83,8 +83,8 @@ table {
 html { 
 	margin: 0 auto;
 	height: 100vh;
-  max-width: 40em;
-  font-size: 1rem;
+  max-width: 40rem;
+  font-size: 1em;
   font-family: "EB Garamond", Garamond, serif;
 	background-color: #000;
 	color: var(--text);
