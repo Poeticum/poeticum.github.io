@@ -83,14 +83,14 @@ table {
 html { 
 	margin: 0 auto;
 	height: 100vh;
-  max-width: 50em;
+  max-width: 40rem;
   font-size: 1em;
   font-family: "EB Garamond", Garamond, serif;
 	background-color: #000;
 	color: var(--text);
 	scroll-behavior: smooth;
   scroll-padding-top: 4em;
-	overflow-y: scroll;
+overflow-y: scroll;
 }
 body {
   height: 100%;
@@ -364,18 +364,19 @@ main {
 	font-family: inherit;
   background-color: var(--background-light);
 }
+/*
 @media (min-width: 20rem){
 	main{
 		font-size:calc(1rem + 0.00625 * (100vw - 20rem));
 	}
 }
-@media (min-width: 50rem){
+@media (min-width: 40rem){
   	main{
 		font-size:1.125rem;
 	}
-}
+}*/
 article {
-	font-size: 120%;
+	font-size: 130%;
 	color: var(--text);
 	background-color: var(--background-light);
 }
