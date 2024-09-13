@@ -84,12 +84,13 @@ html {
 	margin: 0 auto;
 	height: 100vh;
   max-width: 40em;
-  font-size: 1em;
+  font-size: 1rem;
   font-family: "EB Garamond", Garamond, serif;
 	background-color: #000;
 	color: var(--text);
 	scroll-behavior: smooth;
   scroll-padding-top: 4em;
+	overflow-y: scroll;
 }
 body {
   height: 100%;
@@ -232,6 +233,7 @@ nav ul {
   transition: 0.3s ease-in-out;
   max-height: 16rem;
   overflow-y: scroll;
+  scrollbar-color: #0062CC #131618;
   z-index: 1;
 }
 nav ul li {
