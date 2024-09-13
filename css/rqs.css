@@ -81,19 +81,23 @@ table {
 }
 
 html { 
-	margin: 0 auto;
-	height: 100%;
-  max-width: 40em;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1em;
   font-family: "EB Garamond", Garamond, serif;
 	background-color: #000;
 	color: var(--text);
 	scroll-behavior: smooth;
   scroll-padding-top: 4em;
+overflow-y: scroll;
 
 }
 body {
-
+    max-width: 40em;
+  margin: 0;
   height: 100%;
 	line-height: 1.5;
 }
