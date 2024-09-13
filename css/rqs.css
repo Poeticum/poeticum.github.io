@@ -81,11 +81,9 @@ table {
 }
 
 html { 
-  height: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	margin: 0 auto;
+	height: 100vh;
+  max-width: 40em;
   font-size: 1em;
   font-family: "EB Garamond", Garamond, serif;
 	background-color: #000;
@@ -93,11 +91,8 @@ html {
 	scroll-behavior: smooth;
   scroll-padding-top: 4em;
 overflow-y: scroll;
-
 }
 body {
-    max-width: 40em;
-  margin: 0;
   height: 100%;
 	line-height: 1.5;
 }
@@ -369,7 +364,6 @@ main {
 	font-family: inherit;
   background-color: var(--background-light);
 }
-/*
 @media (min-width: 20rem){
 	main{
 		font-size:calc(1rem + 0.00625 * (100vw - 20rem));
@@ -380,7 +374,6 @@ main {
 		font-size:1.125rem;
 	}
 }
-*/
 article {
 	font-size: 120%;
 	color: var(--text);
