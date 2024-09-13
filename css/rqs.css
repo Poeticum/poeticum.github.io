@@ -82,7 +82,7 @@ table {
 
 html { 
   height: 100%;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,7 +92,7 @@ html {
 	color: var(--text);
 	scroll-behavior: smooth;
   scroll-padding-top: 4em;
-
+overflow-y: scroll;
 
 }
 body {
