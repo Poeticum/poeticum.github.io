@@ -369,6 +369,7 @@ main {
 	font-family: inherit;
   background-color: var(--background-light);
 }
+/*
 @media (min-width: 20rem){
 	main{
 		font-size:calc(1rem + 0.00625 * (100vw - 20rem));
@@ -379,6 +380,7 @@ main {
 		font-size:1.125rem;
 	}
 }
+*/
 article {
 	font-size: 120%;
 	color: var(--text);
