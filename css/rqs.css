@@ -82,7 +82,7 @@ table {
 
 html { 
 	margin: 0 auto;
-	height: 100vh;
+	height: 100%;
   max-width: 40em;
   font-size: 1em;
   font-family: "EB Garamond", Garamond, serif;
@@ -90,10 +90,10 @@ html {
 	color: var(--text);
 	scroll-behavior: smooth;
   scroll-padding-top: 4em;
-	overflow-y: scroll;
+
 }
 body {
-	margin: 0;
+
   height: 100%;
 	line-height: 1.5;
 }
