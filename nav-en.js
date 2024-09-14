@@ -16,7 +16,7 @@ Prose&nbsp;poetry&nbsp;by Roberto&nbsp;Q.&nbsp;S.
   <i class="navbtn" tabindex="1"></i>
   Poems
    <ul class="left">
-    <li><a href="locus-errans"><i>Locus Errans</i></a></li>
+    <li><a href="locus-errans-en"><i>Locus Errans</i></a></li>
     <li><a href="aedis-aestusque-en"><i>Aedis Aestusque</i></a></li>
     <li><a href="cumbres-planetarias"><i>Planetary Summits</i></a></li>
     <li><a href="las-lianas-eternas"><i>The Eternal Vines</i></a></li>
