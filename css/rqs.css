@@ -279,10 +279,10 @@ nav ul a:visited:hover {
   color: var(--text);
 }
 nav ul a.not {
-    color: var(--not);
+    color: #565E66;
 }
 nav ul a.not:hover {
-    color: var(--not);
+    color: #565E66;
     background: var(--background-dark);
     cursor: not-allowed;
 }
