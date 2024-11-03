@@ -57,6 +57,7 @@ table {
 	--accent-light: #3395FF;
 	--accent-dark: #0062CC;
 	--visited: #7BA1B3;
+  --not: #808D99;
  }
  
 @font-face {
@@ -592,6 +593,14 @@ button.langrt {
 }
 button.lang:hover {
   background: var(--accent-dark);
+}
+button.langnot {
+    color: var(--not);
+}
+button.langnot:hover {
+    color: var(--not);
+    background: var(--background-light);
+    cursor: not-allowed;
 }
 
 button.toc-button {
