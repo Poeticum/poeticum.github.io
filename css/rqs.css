@@ -83,32 +83,32 @@ table {
 html { 
 	margin: 0 auto;
 	height: 100vh;
-  	max-width: 40em;
-  	font-size: 1em;
-  	font-family: "EB Garamond", Garamond, serif;
+  max-width: 40em;
+  font-size: 1em;
+  font-family: "EB Garamond", Garamond, serif;
 	background-color: #000;
 	color: var(--text);
 	scroll-behavior: smooth;
-  	scroll-padding-top: 4em;
-	overflow-y: scroll;
+  scroll-padding-top: 4em;
+overflow-y: scroll;
 }
 body {
-  	height: 100%;
+  height: 100%;
 	line-height: 1.5;
 }
 .animation-opacity {
-  	animation: opac 0.5s
-     }
-  	@keyframes opac { 
-    	from { opacity: 0 } 
-    	to { opacity :1 }
-	}
+  animation: opac 0.5s
+  }
+  @keyframes opac { 
+    from { opacity: 0 } 
+    to { opacity :1 }
+}
 
 
 header {
   padding: 1.5rem 0;
   text-align: center;
-  background-color: var(--background-dark);
+	background-color: var(--background-dark);
 }
 header h1 {
   margin-top: 0;
@@ -158,7 +158,7 @@ nav button {
   border-radius: 0;
   font-size: 1.35rem;
   font-weight: 500;
-  letter-spacing: -0.5px;
+
   transition: 0.3s ease-in-out;
 }
 nav button.rt {
@@ -193,6 +193,7 @@ nav button.home.current:hover {
 nav button.home.current:active {
   background-color: var(--accent-light);
 }
+
 nav button:hover {
   color: var(--text);
   background-color: var(--accent-dark);
@@ -463,7 +464,7 @@ ul.toc-ul {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
-  margin-inline-start: 0.05rem;
+  margin-inline-start: 0;
 }
 ul.toc-ul li a::after { 
 content: none;
@@ -507,7 +508,6 @@ h3 {
 p + h2, p + h3, ul + h2, ul + h3 {
 	margin-top: 3rem;
 }
-
 
 a:link {
 	color: var(--accent-light);
@@ -568,16 +568,44 @@ button a:active {
 button a:visited {
 	color: var(--text);
 	}
+
+button.lang {
+  margin-top: -1.5px;
+  margin-right: -5px;
+  left: -4rem;
+  display: inline-block;
+  background-color: var(--background-light);
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: 1px solid var(--accent-dark);
+  border-radius: 0;
+  font-size: 1.325rem;
+  transition: 0.3s ease-in-out;
+}
+button.langlft {
+  margin-left: -22.5px;
+  border-left: none;
+}
+button.langrt {
+    border-right: 1px solid var(--accent-dark);
+}
+button.lang:hover {
+  background: var(--accent-dark);
+}
+
 button.toc-button {
-  margin: 0.5rem 0 0.5rem;
+  margin: 0;
 	cursor: pointer;
   border-radius: 0;
+  background-color: var(--background-dark);
+  border-color: var(--border);
+  border-top: none;
   transition: 0.3s ease-in-out;
 }
 button.toc-button:hover {
   color: var(--text);
-	background-color: var(--background-light);
-  border-color: var(--border);
+	background-color: var(--accent-dark);
   transition: 0.3s ease-in-out;
 	}
 button.toc-button::before {
