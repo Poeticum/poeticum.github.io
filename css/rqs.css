@@ -278,6 +278,15 @@ nav ul a:visited {
 nav ul a:visited:hover {
   color: var(--text);
 }
+nav ul a.not {
+    color: var(--not);
+}
+nav ul a.not:hover {
+    color: var(--not);
+    background: var(--background-dark);
+    cursor: not-allowed;
+}
+
 nav button:focus ul {
   transform: translateY(0.75rem);
   visibility: visible;
