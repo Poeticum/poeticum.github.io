@@ -594,10 +594,10 @@ button.langrt {
 button.lang:hover {
   background: var(--accent-dark);
 }
-button.langnot {
+button.not {
     color: var(--not);
 }
-button.langnot:hover {
+button.not:hover {
     color: var(--not);
     background: var(--background-light);
     cursor: not-allowed;
