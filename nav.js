@@ -1,4 +1,4 @@
-const template = document.createElement('navtemplate');
+const navtemplate = document.createElement('navtemplate');
 navtemplate.innerHTML = 
 `
 <header>
