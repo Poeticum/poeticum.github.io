@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poēticum&nbsp;by&nbsp;Roberto&nbsp;Q.&nbsp;S.</title>
+<meta property="og:title" content="Poēticum&nbsp;by&nbsp;Roberto&nbsp;Q.&nbsp;S.">
+<meta name="description" content="Poesía en prosa&nbsp;&middot;&nbsp;Prose poetry&nbsp;&middot;&nbsp;Poésie en prose">
+<meta property="og:description" content="Poesía en prosa&nbsp;&middot;&nbsp;Prose poetry&nbsp;&middot;&nbsp;Poésie en prose">
+<meta property="og:image" content="https://poeticum.org/image.png">
+<meta property="og:url" content="https://poeticum.org/prologue-en">
+<link rel="canonical" href="https://poeticum.org/prologue-en">
+<link rel="stylesheet" href="/css/rqs.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="icon" href="/icon.ico">
+<link rel="me" href="https://writing.exchange/@robertoqs">
+</head>
+
+<body class="animation-opacity">
+  
+<script src='nav-en.js'></script> 
+
+<main>
+<article>
+<section>
+
+<a href="/"><button class="lang langlft">Español</button></a>
+<button class="lang not">English</button>
+<button class="lang langrt not">Français</button>
+
+<h1>Prólogo al sitio web</h1>
+<p>
+This is my personal poetic cyberspace. Here I use “poetic” in two senses: (1) the primary purpose of focusing on my poetry, and (2) the etymology of the word, which derives from the Greek ποίησις <i>póiēsis</i> ‘fabrication, creation, production’, which in turn comes from the infinitive ποιεῖν <i>poiêin</i> ‘to make’. This second usage refers both to the writings as to the construction of the website itself, using basic elements of HTML, CSS,<sup><a href="#nota-abajo" id="nota-arriba"></a></sup>&nbsp; and JavaScript.
+</p>
+<p>
+In case it is of relevance to the user, please know that it is not necessary to activate a dark mode in your internet browser to read here. Furthermore, the development of the site is constant, so that it will continue to grow while there exists a poietic-noetic process of desire to produce. I write in Spanish and eventually translate into English and French. Regarding quotations from other authors, I either translate them or edit previous translations.
+</p>
+</section>
+
+<section>
+<h1>References and&nbsp;notes</h1>
+<ul class="notes">
+	<li>«Greek Word Study Tool», Perseus Digital Library, Tufts University, <a href="https://www.perseus.tufts.edu/hopper/morph">https://www.perseus.tufts.edu/hopper/morph</a>.</li>
+	<li>«Latin Word Study Tool», Perseus Digital Library, Tufts University, <a href="https://www.perseus.tufts.edu/hopper/morph?la=la">https://www.perseus.tufts.edu/hopper/morph?la=la</a>.</li>
+ 	<li id="nota-abajo"><a href="#nota-arriba"></a>My liking for experimenting with CSS and learning as I do so implies that I have tried different designs, according to tendencies that on some occasions have been more enduring and on others more ephemeral. I made the current stylesheet by starting from the most elementary, with a simplicity close to a minimalist style, and congruent with semantic HTML. It starts with <a href="https://meyerweb.com/eric">Eric</a> <a href="https://es.wikipedia.org/wiki/Eric_Meyer">Meyer</a>'s <a href="https://meyerweb.com/eric/tools/css/reset">Reset CSS</a>, which I took from his site, <a href="https://meyerweb.com/ui/about.html">meyerweb</a>, in 2023. Previously, I elaborated personalized versions of <a href="https://igoradamenko.com/awsm.css/v2">awsm.css</a>, created by Igor Adamenko, and of <a href="https://simplecss.org">Simple.css</a>, created by Kev Quirk. Both styles are simple, classless or classlight, and also made with the intention of working with semantic HTML. Additionally, I use <a href="https://icons.getbootstrap.com">Bootstrap icons</a>.</li>
+</ul>
+</section>
+
+</article>
+</main>
+	
+<footer id="pie">
+<a href="https://github.com/Poeticum">Roberto Q. S.</a><br>
+My original work is under international license<br>
+	<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">CC BY-NC-ND 4.0</a> or later.<br>
+<i>Cōgitō ergō quaerō</i>&nbsp;&middot;&nbsp;πάντα ῥεῖ
+ </footer>
+
+<button class="topbutton" id="topbutton" onclick="topbuttonFunction()" >&uarr;</button>
+
+<!-- Fixed navigation, return to top button. --> 
+<script>
+window.onscroll = function() {
+navigationFunction();
+scrollFunction();
+}
+
+var header = document.getElementById("headernav");
+var sticky = header.offsetTop;
+
+var topbtn = document.getElementById("topbutton");
+
+function navigationFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("fixednav");
+  } else {
+    header.classList.remove("fixednav");
+  }
+}
+
+function scrollFunction() {
+  if (document.body.scrollTop> 300 || document.documentElement.scrollTop> 300) {
+    topbtn.style.display = "block";
+  } else {
+    topbtn.style.display = "none";
+  }
+}
+
+function topbuttonFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
+ 
+ <!-- Collapsible table of contents -->  
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("toc-h1-active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script> 
+
+
+
+  
+</body>
+</html>
