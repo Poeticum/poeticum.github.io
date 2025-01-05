@@ -10,7 +10,7 @@ Prose&nbsp;poetry&nbsp;by Roberto&nbsp;Q.&nbsp;S.
 
 <nav id="headernav"> 
 
-<a href="/"><button class="home"></button></a>
+<a href="home"><button class="home"></button></a>
   
 <button tabindex="1">
 <i class="navbtn" tabindex="1"></i>
