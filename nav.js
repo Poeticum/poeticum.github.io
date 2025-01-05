@@ -1,5 +1,5 @@
-const template = document.createElement('template');
-template.innerHTML = 
+const template = document.createElement('navtemplate');
+navtemplate.innerHTML = 
 `
 <header>
  <a href="/"><h1>Poēticum</h1></a>
@@ -41,4 +41,4 @@ Poesía&nbsp;en&nbsp;prosa&nbsp;por Roberto&nbsp;Q.&nbsp;S.
 </nav> 
 
 `
-document.body.appendChild(template.content);
+document.body.appendChild(navtemplate.content);
