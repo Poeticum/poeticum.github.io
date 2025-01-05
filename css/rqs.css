@@ -50,12 +50,12 @@ table {
 :root {
 	--serif-font: "EB Garamond", Garamond, serif;
 	--mono-font: "Monospace", monospace;
-	--background-dark: #131618;
-	--background-light: #212529;
+	/*--background-dark: #131618;*/
+	--background: #212529;
 	--text: #F8F9FA;
 	--border: #495057;
-	--accent-light: #3395FF;
-	--accent-dark: #0062CC;
+	--accent: #0062CC;
+	--hover: #3395FF;
 	--visited: #7BA1B3;
 	--not: #616A73;
  }
@@ -87,7 +87,7 @@ html {
   max-width: 40em;
   font-size: 1em;
   font-family: "EB Garamond", Garamond, serif;
-	background-color: #000;
+	background-color: var(--background);
 	color: var(--text);
 	scroll-behavior: smooth;
   scroll-padding-top: 4em;
@@ -109,7 +109,7 @@ body {
 header {
   padding: 1.5rem 0;
   text-align: center;
-	background-color: var(--background-dark);
+	background-color: var(--background);
 }
 header h1 {
   margin-top: 0;
@@ -123,7 +123,7 @@ header a:hover {
   text-decoration: underline;
 }
 header a:visited {
-	color: var(--accent-light);
+	color: var(--accent);
 }
 header p {
   margin: 1rem 1rem 0;
@@ -134,9 +134,9 @@ header p {
 nav {
   height: 2.5rem;
   width: 100%;
-  background-color: var(--background-dark);
+  background-color: var(--background);
   border-top: none;
-  border-bottom: 4px solid var(--accent-dark);
+  border-bottom: 4px solid var(--accent);
   z-index: 2;
 }
 .fixednav {
@@ -151,11 +151,11 @@ nav button {
   margin-right: -5px;
   position: relative;
   display: inline-block;
-  background-color: var(--background-dark);
+  background-color: var(--background);
   border-top: none;
   border-right: none;
   border-bottom: none;
-  border-left: 1px solid var(--accent-dark);
+  border-left: 1px solid var(--accent);
   border-radius: 0;
   font-size: 1.35rem;
   font-weight: 500;
@@ -163,14 +163,14 @@ nav button {
   transition: 0.3s ease-in-out;
 }
 nav button.rt {
-    border-right: 1px solid var(--accent-dark);
+    border-right: 1px solid var(--accent);
 }
 nav button.home {
   border-left: none;
   max-height: 2.5rem;
 }
 nav button.home::before {
-  color: var(--accent-light);
+  color: var(--accent);
   font-family:"bootstrap-icons";
   content: "\F62E";
   position: relative;
@@ -182,31 +182,19 @@ nav button.home::before {
 nav button.home:hover::before {
   color: var(--text);
 }
-nav button.home.current {
-  background-color: var(--accent-dark);
-}
-nav button.home.current::before {
-  color: var(--text);
-}
-nav button.home.current:hover {
-  background-color: var(--accent-light);
-}
-nav button.home.current:active {
-  background-color: var(--accent-light);
-}
 
 nav button:hover {
   color: var(--text);
-  background-color: var(--accent-dark);
+  background-color: var(--accent);
 }
 nav button:active {
   color: var(--text);
-  background-color: var(--accent-dark);
+  background-color: var(--accent);
   text-decoration:none;
 }
 nav button:focus {
   color: var(--text);
-  background-color: var(--accent-dark);
+  background-color: var(--accent);
 }
 nav button a:hover {
   color: var(--text);
@@ -215,7 +203,7 @@ nav button a:hover {
 	}
 nav button a:active {
   color: var(--text);
-  background-color: var(--accent-dark);
+  background-color: var(--accent);
 	text-decoration:none;
 	}
 nav ul {
@@ -225,8 +213,8 @@ nav ul {
   white-space: nowrap;
   position: absolute;
   top: 1.8rem;
-  background-color: var(--background-dark);
-  border: 1px solid var(--accent-dark);
+  background-color: var(--background);
+  border: 1px solid var(--accent);
   font-variant: normal;
   min-width: 100%;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 2);
@@ -264,12 +252,12 @@ nav ul a {
 }
 nav ul a:hover {
   color: var(--text);
-  background-color: var(--accent-dark);
+  background-color: var(--accent);
   text-decoration: none;
 }
 nav ul a:active {
   color: var(--text);
-  background-color: var(--accent-dark);
+  background-color: var(--accent);
   text-decoration: none;
 }
 nav ul a:visited {
@@ -283,7 +271,7 @@ nav ul a.not {
 }
 nav ul a.not:hover {
     color: #565E66;
-    background: var(--background-dark);
+    background: var(--background);
     cursor: not-allowed;
 }
 
@@ -317,11 +305,11 @@ nav button .navbtn:focus ul {
 .sub-dropdown-content {
   white-space: nowrap;
   position: absolute;
-  border-top: 8px solid var(--accent-light);
-  border-right: 2px solid var(--accent-light);
-  border-bottom: 2px solid var(--accent-light);
-  border-left: 8px solid var(--accent-light);
-  background-color: var(--accent-light-bg);
+  border-top: 8px solid var(--accent);
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  border-left: 8px solid var(--accent);
+  background-color: var(--accent-bg);
   visibility: hidden;
   opacity: 0;
   top: 282%;
@@ -348,8 +336,8 @@ nav button .navbtn:focus ul {
   float: right;
 }
 .sub-dropdown:hover .sub-dropdown-content {
-  color: var(--accent-light-bg);
-  background-color: var(--accent-light-bg);
+  color: var(--accent-bg);
+  background-color: var(--accent-bg);
   visibility: visible;
   opacity: 1;
   transform: translateY(10px);
@@ -373,7 +361,7 @@ main {
   padding: 0.1rem 1.25rem 6rem;
   min-height: 100%;
 	font-family: inherit;
-  background-color: var(--background-light);
+  background-color: var(--background);
 }
 @media (min-width: 20rem){
 	main{
@@ -388,12 +376,12 @@ main {
 article {
 	font-size: 120%;
 	color: var(--text);
-	background-color: var(--background-light);
+	background-color: var(--background);
 }
 section {
   margin: 3rem 0 0;
 	color: var(--text);
-	background-color: var(--background-light);
+	background-color: var(--background);
 }
 section:first-child {
   margin: 0;
@@ -418,11 +406,11 @@ sup a::after {
   content:"\F22B";
 }
 sup a:hover {
-  color: var(--accent-dark);
+  color: var(--accent);
  text-decoration: none; 
 }
 sup a:visited:hover {
-  color: var(--accent-light);
+  color: var(--accent);
  text-decoration: none; 
 }
 
@@ -431,7 +419,7 @@ blockquote {
 	margin-inline-start: 0.1rem;
 	margin-inline-end: 0;
 	padding: 0 0.5rem 0 1rem;
-	border-inline-start: 1px solid var(--accent-dark);
+	border-inline-start: 1px solid var(--accent);
 }
 
 ul, ol {
@@ -460,10 +448,10 @@ top: -0.2rem;
   padding-right: 0.2rem;
 }
 ul.notes li a:hover::after, ol.notes li a:hover::after { 
-color: var(--accent-dark);
+color: var(--accent);
 }
 ul.notes li a:visited:hover::after, ol.notes li a:visited:hover::after { 
-color: var(--accent-light);
+color: var(--accent);
 }
 
 ul.toc-ul {
@@ -520,14 +508,14 @@ p + h2, p + h3, ul + h2, ul + h3 {
 }
 
 a:link {
-	color: var(--accent-light);
+	color: var(--accent);
  	text-decoration: none;
 }
 a:hover {
 	text-decoration: underline;
 }
 a:active {
-	color: var(--accent-light);
+	color: var(--accent);
 	text-decoration: underline 2px;
 }
 a:visited {
@@ -544,7 +532,7 @@ top: -0.3rem;
     padding-right: 0.2rem !important;
 }
 a[href^="http"]:hover::after {
-color: var(--accent-light) !important;
+color: var(--accent) !important;
 }
 a[href^="http"]:visited:hover::after {
 color: var(--visited) !important;
@@ -554,7 +542,7 @@ button {
   height: 2.5rem;
 	padding: 0 10px;
 	color: var(--text);
-	background-color: var(--accent-dark);
+	background-color: var(--accent);
   font-size: inherit;
   font-family: inherit;
 	border: 1px solid #000;
@@ -563,7 +551,7 @@ button {
   transition: background-color 0.3s ease-in-out;
 }
 button:hover {
-	background-color: var(--accent-light);
+	background-color: var(--hover);
   transition: 0.3s ease-in-out;
 	}
 button a:hover {
@@ -572,7 +560,7 @@ button a:hover {
 	}
 button a:active {
 	color: var(--text);
-	background-color: var(--accent-light);
+	background-color: var(--accent);
 	text-decoration:none;
 	}
 button a:visited {
@@ -584,31 +572,31 @@ button.lang {
   margin-right: -5px;
   left: -4rem;
   display: inline-block;
-  background-color: var(--background-light);
+  background-color: var(--background);
   border-top: none;
   border-right: none;
   border-bottom: none;
-  border-left: 1px solid var(--accent-dark);
+  border-left: 1px solid var(--accent);
   border-radius: 0;
   font-size: 1.325rem;
   transition: 0.3s ease-in-out;
 }
 button.langlft {
-  margin-left: -22.5px;
+  margin-left: -20px;
   border-left: none;
 }
 button.langrt {
-    border-right: 1px solid var(--accent-dark);
+    border-right: 1px solid var(--accent);
 }
 button.lang:hover {
-  background: var(--accent-dark);
+  background: var(--accent);
 }
 button.not {
     color: var(--not);
 }
 button.not:hover {
     color: var(--not);
-    background: var(--background-light);
+    background: var(--background);
     cursor: not-allowed;
 }
 
@@ -616,14 +604,14 @@ button.toc-button {
   margin: 0;
 	cursor: pointer;
   border-radius: 0;
-  background-color: var(--background-dark);
+  background-color: var(--background);
   border-color: var(--border);
   border-top: none;
   transition: 0.3s ease-in-out;
 }
 button.toc-button:hover {
   color: var(--text);
-	background-color: var(--accent-dark);
+	background-color: var(--accent);
   transition: 0.3s ease-in-out;
 	}
 button.toc-button::before {
@@ -676,8 +664,8 @@ footer {
   position: relative;  
   bottom: 0;
 	padding: 1rem;
-	background-color: var(--background-dark);
-  border-top: 4px solid var(--accent-dark);
+	background-color: var(--background);
+  border-top: 4px solid var(--accent);
   font-size: 1.25rem;
   text-align: left;
 }
