@@ -18,7 +18,7 @@ Poems
 <ul class="left">
 	<li><a href="aedis-aestusque-en"><i>Aedis Aestusque</i></a></li>
 	<li><a href="locus-errans-en"><i>Locus Errans</i></a></li>
-	<li><a class="not"><i>Planetary Summits</i></a></li>
+	<li><a href="planetary-summits"><i>Planetary Summits</i></a></li>
 	<li><a class="not"><i>The Eternal Vines</i></a></li>
 	<li><a class="not"><i>The Mycelium of Dawn</i></a></li>
 	<li><a class="not"><i>Igneous Drops</i></a></li>
